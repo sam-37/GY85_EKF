@@ -1,3 +1,5 @@
+#if 1
+
 /* Benchmark: Using GY-85 and TinyEKF on Arduino/Teensy.
 
    This code is free software: you can redistribute it and/or modify
@@ -21,6 +23,8 @@
   3.3V          VCC
   GND           GND
 */
+
+#include <Arduino.h>
 
 #define N 4     // states, will also be measurement values M
 #define M 4
@@ -220,7 +224,7 @@ void getRrate() {
 
 void setup() {
 
-  Serial.begin(9600);
+  Serial.begin(115200);
 
   setupSensor();
 
@@ -264,3 +268,5 @@ void loop() {
   Serial.println(z[3]);
   
 }
+
+#endif

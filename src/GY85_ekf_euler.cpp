@@ -22,6 +22,10 @@
   GND           GND
 */
 
+#if 0
+
+#include <Arduino.h>
+
 #define N 3     // states, will also be measurement values M
 #define M 3
 #include <Wire.h>
@@ -220,7 +224,7 @@ void getRrate() {
 
 void setup() {
 
-  Serial.begin(9600);
+  Serial.begin(115200);
 
   setupSensor();
 
@@ -294,3 +298,5 @@ void loop() {
   Serial.println(m22);
   
 }
+
+#endif

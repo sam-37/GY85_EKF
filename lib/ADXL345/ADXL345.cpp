@@ -12,7 +12,7 @@
  * GNU License V2 for more details.                                        *
  *                                                                         *
  ***************************************************************************/
-#include "Arduino.h"
+
 #include "ADXL345.h"
 #include <Wire.h>
 
